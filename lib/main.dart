@@ -1,4 +1,4 @@
-import 'package:dokme_burger/login-page.dart';
+import 'package:dokme_burger/main_pages/login_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {

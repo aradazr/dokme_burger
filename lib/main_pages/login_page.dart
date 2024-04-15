@@ -1,6 +1,6 @@
 import 'package:dokme_burger/components/colors-style.dart';
-import 'package:dokme_burger/widgets/input-number.dart';
-import 'package:dokme_burger/widgets/send-code-bttn.dart';
+import 'package:dokme_burger/widgets/input_number.dart';
+import 'package:dokme_burger/widgets/send_code-bttn.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';

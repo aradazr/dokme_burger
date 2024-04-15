@@ -18,8 +18,8 @@ class InputNumber extends StatelessWidget {
           SizedBox(
             height: size.height * .05,
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 70),
+          const Padding(
+            padding: EdgeInsets.only(left: 70),
             child: Text(
               AppText.interYourNumber,
               style: AppTextStyle.interYourNumber,
