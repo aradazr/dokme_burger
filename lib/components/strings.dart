@@ -7,5 +7,8 @@ class AppText{
   static const String registerCodePageEnterRegisterationCode = 'کد فعال سازی را وارد کنید';
   static const String registerCodePageContinue = 'ادامه';
   static const String registerCodePageHintText = '------';
+  static const String signUpPageNameLastName = 'نام و نام خانوادگی';
+  static const String signUpPageHintText = 'نام و نام خانوادگی را وارد نمایید';
+  static const String signUpPageSignUp = 'ثبت نام';
   
 }

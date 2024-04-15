@@ -1,4 +1,6 @@
+import 'package:dokme_burger/main_pages/login_page.dart';
 import 'package:dokme_burger/main_pages/registration_code_page.dart';
+import 'package:dokme_burger/main_pages/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +16,9 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       title: 'Dokme Burger',
       debugShowCheckedModeBanner: false,
-      home: RegisterationCodePage(),
+      initialRoute: ,
+      routes: ,
+      // home: SignUpPage(),
       
     );
   }

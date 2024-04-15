@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 import 'package:dokme_burger/components/text-style.dart';
 
-class InputNumberTextField extends StatelessWidget {
+class InputTextField extends StatelessWidget {
   
   
   final String helperText;
@@ -12,7 +12,7 @@ class InputNumberTextField extends StatelessWidget {
   final Color textFieldColor;
   final TextEditingController controller;
 
-    InputNumberTextField({
+    InputTextField({
     super.key,
     required this.helperText,
     required this.hintText,
@@ -55,7 +55,7 @@ class InputNumberTextField extends StatelessWidget {
           ),
           SizedBox(
             width: size.width * .77,
-            height: size.height * .1,
+            height: size.height * .08,
             child: TextField(
               controller: controller,
               style: AppTextStyle.typeNumberLoginPage,

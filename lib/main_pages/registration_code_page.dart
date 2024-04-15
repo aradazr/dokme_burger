@@ -2,7 +2,7 @@ import 'package:dokme_burger/components/colors-style.dart';
 import 'package:dokme_burger/components/strings.dart';
 import 'package:dokme_burger/components/text-style.dart';
 import 'package:dokme_burger/widgets/custom_bttn.dart';
-import 'package:dokme_burger/widgets/input_number_text_field.dart';
+import 'package:dokme_burger/widgets/input_text_field.dart';
 import 'package:flutter/material.dart';
 
 class RegisterationCodePage extends StatelessWidget {
@@ -48,13 +48,13 @@ class RegisterationCodePage extends StatelessWidget {
                   ),
                   
                   //? محل قرار گیری کد فعال سازی
-                  InputNumberTextField(
+                  InputTextField(
                       helperText: AppText.registerCodePageEnterRegisterationCode,
                       hintText: AppText.registerCodePageHintText,
                       textFieldColor: ColorStyles.registerCodePageTextFieldColor,
                       counter: '02:35',
                       controller: _controller),
-                  
+                  SizedBox(height: size.height * .015,),
                   //? دکمه ی ادامه
                   CustomBttn(
                       bttnColor: ColorStyles.registerCodePageContinueColor,

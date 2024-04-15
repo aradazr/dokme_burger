@@ -28,7 +28,7 @@ class AppTextStyle {
   );
   static const TextStyle registerCodePageWrongNumber = TextStyle(
     fontFamily: 'dana',
-    fontSize: 20,
+    fontSize: 18,
     color: Color.fromARGB(255, 238, 181, 30),
   );
   static const TextStyle registerCodePageEnterRegisterationCode = TextStyle(
@@ -38,12 +38,27 @@ class AppTextStyle {
   );
   static const TextStyle registerCodePageContinue = TextStyle(
     fontFamily: 'dana',
-    fontSize: 20,
+    fontSize: 24,
     color: Color.fromARGB(255, 0, 0, 0),
   );
   static const TextStyle registerCodePageCounter = TextStyle(
     fontFamily: 'dana',
     fontSize: 20,
     color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle signUpPageNameLastName = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 18,
+    color: Color.fromARGB(255, 217, 217, 217),
+  );
+  static const TextStyle signUpPageHintText = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 18,
+    color: Color.fromARGB(126, 0, 0, 0),
+  );
+  static const TextStyle signUpPageSignUp = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 24,
+    color: Color.fromARGB(255, 0, 0, 0),
   );
 }
