@@ -3,16 +3,14 @@ import 'package:flutter/widgets.dart';
 
 class AppTextStyle {
   static const TextStyle interYourNumber = TextStyle(
-    fontFamily: 'dana',
-    fontSize: 18,
-    color: Color.fromARGB(255, 217, 217, 217)
-  );
+      fontFamily: 'dana',
+      fontSize: 18,
+      color: Color.fromARGB(255, 217, 217, 217));
   static const TextStyle numberPlaceHolder = TextStyle(
-    fontFamily: 'dana',
-    fontSize: 18,
-    height: 0.9,
-    color: Color.fromARGB(126, 0, 0, 0)
-  );
+      fontFamily: 'dana',
+      fontSize: 18,
+      height: 0.9,
+      color: Color.fromARGB(126, 0, 0, 0));
   static const TextStyle sendCode = TextStyle(
     fontFamily: 'dana',
     fontSize: 24,
@@ -22,6 +20,30 @@ class AppTextStyle {
     fontFamily: 'dana',
     fontSize: 20,
     color: Color.fromARGB(255, 0, 0, 0),
-    
+  );
+  static const TextStyle registerCodePageSendCodeToNumber = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 18,
+    color: Color.fromARGB(255, 217, 217, 217),
+  );
+  static const TextStyle registerCodePageWrongNumber = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 20,
+    color: Color.fromARGB(255, 238, 181, 30),
+  );
+  static const TextStyle registerCodePageEnterRegisterationCode = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 20,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle registerCodePageContinue = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 20,
+    color: Color.fromARGB(255, 0, 0, 0),
+  );
+  static const TextStyle registerCodePageCounter = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 20,
+    color: Color.fromARGB(255, 255, 255, 255),
   );
 }

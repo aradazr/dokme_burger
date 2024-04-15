@@ -1,32 +1,49 @@
 import 'package:dokme_burger/components/colors-style.dart';
-import 'package:dokme_burger/widgets/input_number.dart';
-import 'package:dokme_burger/widgets/send_code-bttn.dart';
+import 'package:dokme_burger/components/strings.dart';
+import 'package:dokme_burger/widgets/input_number_text_field.dart';
+import 'package:dokme_burger/widgets/custom_bttn.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:flutter/widgets.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
+
+  final TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
-
     return SafeArea(
-      child: Scaffold(
-        backgroundColor: ColorStyles.loginPageBackGroundColor,
-        body: SingleChildScrollView(
-          child: Center(
-            child: Column(
-              
-              children: [
-                SizedBox(height: size.height * .12,),
-                Image.asset('assets/images/dokme logo.png'),
-                 
-                InputNumber(),
-                SendCodeBttn()
-              ],
+      child: GestureDetector(
+        onTap: () => FocusScope.of(context).unfocus(),
+        child: Scaffold(
+          backgroundColor: ColorStyles.loginPageBackGroundColor,
+          body: SingleChildScrollView(
+            
+            child: Center(
+              child: Column(
+                children: [
+                  SizedBox(
+                    height: size.height * .12,
+                  ),
+                  Image.asset('assets/images/dokme logo.png'),
+        
+                  //? تکست فیلدی که شماره موبایل را وارد میکنیم
+        
+                  InputNumberTextField(
+                      helperText: AppText.loginPageinterYourNumber,
+                      hintText: AppText.loginPageHintText,
+                      textFieldColor: ColorStyles.loginPageTextFieldColor,
+                      counter: '',
+                      controller: _controller),
+        
+                  //? دکمه ارسال کد
+                  CustomBttn(
+                    bttnColor: ColorStyles.loginPageSendCodeColor,
+                    bttnText: AppText.loginPageSendCode,
+                  )
+                ],
+              ),
             ),
           ),
         ),
@@ -34,5 +51,3 @@ class LoginPage extends StatelessWidget {
     );
   }
 }
-
-

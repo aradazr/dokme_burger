@@ -1,14 +1,23 @@
-import 'package:dokme_burger/components/colors-style.dart';
-import 'package:dokme_burger/components/strings.dart';
-import 'package:dokme_burger/components/text-style.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/widgets.dart';
 import 'package:flutter_inner_shadow/flutter_inner_shadow.dart';
 
-class SendCodeBttn extends StatelessWidget {
-  const SendCodeBttn({
+import 'package:dokme_burger/components/colors-style.dart';
+import 'package:dokme_burger/components/strings.dart';
+import 'package:dokme_burger/components/text-style.dart';
+
+class CustomBttn extends StatelessWidget {
+   CustomBttn({
     super.key,
+    required this.bttnColor,
+    required this.bttnText,
   });
 
+
+  final Color bttnColor;
+  final String bttnText;
+
+  
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -28,10 +37,10 @@ class SendCodeBttn extends StatelessWidget {
           width: size.width * .77,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(48),
-            color: ColorStyles.loginPageSendCodeColor,
+            color: bttnColor,
           ),
           child: Text(
-            AppText.loginPageSendCode,
+            bttnText,
             style: AppTextStyle.sendCode,
           ),
         ),
