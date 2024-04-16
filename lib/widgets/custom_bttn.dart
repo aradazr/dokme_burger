@@ -11,11 +11,13 @@ class CustomBttn extends StatelessWidget {
     super.key,
     required this.bttnColor,
     required this.bttnText,
+    required this.onTap,
   });
 
 
   final Color bttnColor;
   final String bttnText;
+  final  onTap;
 
   
   @override
@@ -23,7 +25,7 @@ class CustomBttn extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return GestureDetector(
-      onTap: () {},
+      onTap: onTap,
       child: InnerShadow(
         shadows: [
           Shadow(

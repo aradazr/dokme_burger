@@ -1,5 +1,6 @@
 import 'package:dokme_burger/components/colors-style.dart';
 import 'package:dokme_burger/components/strings.dart';
+import 'package:dokme_burger/route/names.dart';
 import 'package:dokme_burger/widgets/input_text_field.dart';
 import 'package:dokme_burger/widgets/custom_bttn.dart';
 import 'package:flutter/material.dart';
@@ -42,6 +43,7 @@ class LoginPage extends StatelessWidget {
                   CustomBttn(
                     bttnColor: ColorStyles.loginPageSendCodeColor,
                     bttnText: AppText.loginPageSendCode,
+                    onTap: ()=> Navigator.pushNamed(context, ScreenNames.registerationCodePage),
                   )
                 ],
               ),

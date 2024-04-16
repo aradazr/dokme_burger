@@ -1,9 +1,11 @@
 import 'package:dokme_burger/components/colors-style.dart';
 import 'package:dokme_burger/components/strings.dart';
 import 'package:dokme_burger/components/text-style.dart';
+import 'package:dokme_burger/route/names.dart';
 import 'package:dokme_burger/widgets/custom_bttn.dart';
 import 'package:dokme_burger/widgets/input_text_field.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class RegisterationCodePage extends StatelessWidget {
   RegisterationCodePage({super.key});
@@ -42,9 +44,12 @@ class RegisterationCodePage extends StatelessWidget {
                   ),
                  
                  //! اگر شماره اشتباه است ان را ویرایش کن
-                  Text(
-                    AppText.registerCodePageWrongNumber,
-                    style: AppTextStyle.registerCodePageWrongNumber,
+                  GestureDetector(
+                    onTap: () => Navigator.pop(context),
+                    child: Text(
+                      AppText.registerCodePageWrongNumber,
+                      style: AppTextStyle.registerCodePageWrongNumber,
+                    ),
                   ),
                   
                   //? محل قرار گیری کد فعال سازی
@@ -58,7 +63,8 @@ class RegisterationCodePage extends StatelessWidget {
                   //? دکمه ی ادامه
                   CustomBttn(
                       bttnColor: ColorStyles.registerCodePageContinueColor,
-                      bttnText: AppText.registerCodePageContinue
+                      bttnText: AppText.registerCodePageContinue,
+                      onTap: ()=> Navigator.pushNamed(context, ScreenNames.signUpPage),
                       )
                 ],
               ),

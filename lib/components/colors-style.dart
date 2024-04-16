@@ -11,4 +11,6 @@ class ColorStyles {
   static const signUpPageBackGroundColorColor = Color.fromARGB(255, 35, 34, 40);
   static const signUpPageContinueColor = Color.fromARGB(255, 238, 181, 30);
   static const signUpPageTextFieldColor = Color.fromARGB(255, 217, 217, 217);
+  static const navBarColor = Color.fromARGB(255, 35, 34, 40);
+  static const navBarHomeActiveColor = Color.fromARGB(255, 238, 181, 30);
 }
