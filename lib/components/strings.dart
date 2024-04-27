@@ -10,5 +10,6 @@ class AppText{
   static const String signUpPageNameLastName = 'نام و نام خانوادگی';
   static const String signUpPageHintText = 'نام و نام خانوادگی را وارد نمایید';
   static const String signUpPageSignUp = 'ثبت نام';
+  static const String burgerName = 'شیفت برگر';
   
 }

@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -60,5 +62,34 @@ class AppTextStyle {
     fontFamily: 'dana',
     fontSize: 24,
     color: Color.fromARGB(255, 0, 0, 0),
+  );
+  static const TextStyle homePageHeadText = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 40,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle homePageHeadYellowText = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 40,
+    color: Color.fromARGB(255, 238, 181, 30),
+  );
+  static const TextStyle burgerName = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 32,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle priceText = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 35,
+    color: Color.fromARGB(255, 255, 255, 255),
+    shadows: [
+      
+      Shadow(
+        offset: Offset(2, 3),
+        blurRadius: 2.3,
+        color: Colors.black,
+
+      )
+    ]
   );
 }

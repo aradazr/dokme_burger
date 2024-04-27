@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_inner_shadow/flutter_inner_shadow.dart';
 
 import 'package:dokme_burger/components/colors-style.dart';
-import 'package:dokme_burger/components/strings.dart';
+
 import 'package:dokme_burger/components/text-style.dart';
 
 class CustomBttn extends StatelessWidget {

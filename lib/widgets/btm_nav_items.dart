@@ -9,9 +9,9 @@ class BtmNavItems extends StatelessWidget {
     super.key,
   });
 
-String iconImage;
-bool isActive;
-void Function() onTap;
+final String iconImage;
+final bool isActive;
+final void Function() onTap;
 
 
   @override

@@ -1,8 +1,5 @@
 import 'package:dokme_burger/route/names.dart';
 import 'package:dokme_burger/route/routes.dart';
-import 'package:dokme_burger/screens/login_page.dart';
-import 'package:dokme_burger/screens/registration_code_page.dart';
-import 'package:dokme_burger/screens/sign_up_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
