@@ -19,12 +19,13 @@ class SingleBurger extends StatefulWidget {
 
 
 
-int count = 0;
+
 
 class _SingleBurgerState extends State<SingleBurger> {
-  @override
+  int count = 0;
 
-   
+  
+  @override
   Widget build(BuildContext context) {
 
     Size size = MediaQuery.of(context).size;

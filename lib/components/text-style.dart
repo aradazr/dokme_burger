@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -78,18 +76,62 @@ class AppTextStyle {
     fontSize: 32,
     color: Color.fromARGB(255, 255, 255, 255),
   );
-  static const TextStyle priceText = TextStyle(
+  static const TextStyle burgerNameSingleScreen = TextStyle(
     fontFamily: 'dana',
-    fontSize: 35,
+    fontSize: 24,
     color: Color.fromARGB(255, 255, 255, 255),
-    shadows: [
-      
-      Shadow(
-        offset: Offset(2, 3),
-        blurRadius: 2.3,
-        color: Colors.black,
-
-      )
-    ]
   );
+  static const TextStyle ingredientExplain = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 20,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle burgurExplain = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 20,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle burgurSingleScreenPrice = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 18,
+    color: Color.fromARGB(255, 0, 0, 0),
+  );
+  static const TextStyle addToBasket = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 16,
+    color: Color.fromARGB(255, 0, 0, 0),
+  );
+  static const TextStyle priceText = TextStyle(
+      fontFamily: 'dana',
+      fontSize: 35,
+      color: Color.fromARGB(255, 255, 255, 255),
+      shadows: [
+        Shadow(
+          offset: Offset(2, 3),
+          blurRadius: 2.3,
+          color: Colors.black,
+        )
+      ]);
+  static const TextStyle ingredient = TextStyle(
+      fontFamily: 'dana',
+      fontSize: 24,
+      color: Color.fromARGB(255, 255, 255, 255),
+      shadows: [
+        Shadow(
+          offset: Offset(0, 3),
+          blurRadius: 15,
+          color: Color.fromARGB(255, 238, 181, 30),
+        )
+      ]);
+  static const TextStyle exPlain = TextStyle(
+      fontFamily: 'dana',
+      fontSize: 24,
+      color: Color.fromARGB(255, 255, 255, 255),
+      shadows: [
+        Shadow(
+          offset: Offset(0, 3),
+          blurRadius: 15,
+          color: Color.fromARGB(255, 238, 181, 30),
+        )
+      ]);
 }

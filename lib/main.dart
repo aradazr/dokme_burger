@@ -1,5 +1,6 @@
 import 'package:dokme_burger/route/names.dart';
 import 'package:dokme_burger/route/routes.dart';
+import 'package:dokme_burger/screens/product_single_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,8 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Dokme Burger',
       debugShowCheckedModeBanner: false,
       initialRoute: ScreenNames.root,
-      routes: routes,
-      // home: SignUpPage(),
+      // routes: routes,
+      home: ProductSingleScreen(),
       
     );
   }

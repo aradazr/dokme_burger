@@ -11,5 +11,8 @@ class AppText{
   static const String signUpPageHintText = 'نام و نام خانوادگی را وارد نمایید';
   static const String signUpPageSignUp = 'ثبت نام';
   static const String burgerName = 'شیفت برگر';
+  static const String ingredient = ':مواد تشکیل دهنده';
+  static const String exPlain = ':توضیحات';
+  static const String addToBasket = 'افزودن به سبد';
   
 }
