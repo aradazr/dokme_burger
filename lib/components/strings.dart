@@ -14,5 +14,6 @@ class AppText{
   static const String ingredient = ':مواد تشکیل دهنده';
   static const String exPlain = ':توضیحات';
   static const String addToBasket = 'افزودن به سبد';
+  static const String userProfile = 'پروفایل کاربر';
   
 }

@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       title: 'Dokme Burger',
       debugShowCheckedModeBanner: false,
-      // initialRoute: ScreenNames.root,
-      // routes: routes,
-      home: ProductSingleScreen(),
+      initialRoute: ScreenNames.root,
+      routes: routes,
+      // home: ProductSingleScreen(),
       
     );
   }

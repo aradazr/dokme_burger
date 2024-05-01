@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class ColorStyles {
   static const loginPageBackGroundColor = Color.fromARGB(255, 35, 34, 40);
+  static const profilePageBackGroundColor = Color.fromARGB(255, 35, 34, 40);
   static const singleProductScreenBackGroundColor = Color.fromARGB(255, 35, 34, 40);
   static const homePageBackGroundColor = Color.fromARGB(255, 35, 34, 40);
   static const appBarBackGroundColor = Color.fromARGB(255, 35, 34, 40);
@@ -20,6 +21,7 @@ class ColorStyles {
   static const appBarShadowColor = Color.fromARGB(255, 118, 0, 159);
   static const navBarHomeActiveColor = Color.fromARGB(255, 238, 181, 30);
   static const burgerPlusBtnColor = Color.fromARGB(255, 238, 181, 30);
+  static const ruleColor = Color.fromARGB(255, 217, 217, 217);
   static const List<Color> singleItemBackGroundColor = [
     Color.fromARGB(15, 0, 0, 0),
     Color.fromARGB(255, 26, 20, 55),

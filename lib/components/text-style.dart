@@ -86,6 +86,21 @@ class AppTextStyle {
     fontSize: 20,
     color: Color.fromARGB(255, 255, 255, 255),
   );
+  static const TextStyle userProfile = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 20,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle userName = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 18,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle userPhoneNumber = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 18,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
   static const TextStyle burgurExplain = TextStyle(
     fontFamily: 'dana',
     fontSize: 20,
@@ -99,6 +114,12 @@ class AppTextStyle {
   static const TextStyle addToBasket = TextStyle(
     fontFamily: 'dana',
     fontSize: 16,
+    color: Color.fromARGB(255, 0, 0, 0),
+  );
+  static const TextStyle ruleText = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 22,
+    
     color: Color.fromARGB(255, 0, 0, 0),
   );
   static const TextStyle priceText = TextStyle(
