@@ -10,7 +10,8 @@ class MyAppBar extends StatefulWidget implements PreferredSizeWidget {
     this.rightIcon,
     this.leftIcon,
     this.onTabRightIcon,
-    this.onTabLefttIcon
+    this.onTabLefttIcon,
+    required this.appBarShadowColor
 
   }) : preferredSize = Size.fromHeight(70);
   
@@ -21,6 +22,7 @@ late final Widget? rightIcon;
   late final Widget? leftIcon;
  void Function()? onTabRightIcon;
  void Function()? onTabLefttIcon;
+  final Color appBarShadowColor;
   @override
   final Size preferredSize;
   @override
@@ -33,26 +35,40 @@ late final Widget? rightIcon;
 class _MyAppBarState extends State<MyAppBar> {
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-      backgroundColor: ColorStyles.appBarBackGroundColor,
-      shadowColor: Colors.black,
-      
-      elevation: 0,
-      leading: Padding(
-        padding:  EdgeInsets.only(top: 19),
-        child:GestureDetector(
-          onTap: widget.onTabRightIcon,
-          child: widget.leftIcon) ,
+    return Container(
+      decoration: BoxDecoration(
+        boxShadow: [
+          BoxShadow(
+            color: widget.appBarShadowColor,
+            blurRadius: 15,
+            offset: Offset(0, 3),
+            blurStyle: BlurStyle.outer,
+
+          )
+        ]
       ),
-      actions: [
-        GestureDetector(
-          onTap: widget.onTabLefttIcon,
-          child: Padding(
-            padding: const EdgeInsets.only(top: 14, right: 10),
-            child: widget.rightIcon,
-          ),
+      child: AppBar(
+        backgroundColor: ColorStyles.appBarBackGroundColor,
+        forceMaterialTransparency: false,
+        
+        
+        
+        leading: Padding(
+          padding:  EdgeInsets.only(top: 19,left: 8),
+          child:GestureDetector(
+            onTap: widget.onTabLefttIcon,
+            child: widget.leftIcon) ,
         ),
-      ],
+        actions: [
+          GestureDetector(
+            onTap: widget.onTabRightIcon,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 14, right: 10),
+              child: widget.rightIcon,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

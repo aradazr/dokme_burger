@@ -17,6 +17,7 @@ class ColorStyles {
   static const signUpPageTextFieldColor = Color.fromARGB(255, 217, 217, 217);
   static const dividerColor = Color.fromARGB(255, 217, 217, 217);
   static const navBarColor = Color.fromARGB(255, 35, 34, 40);
+  static const appBarShadowColor = Color.fromARGB(255, 118, 0, 159);
   static const navBarHomeActiveColor = Color.fromARGB(255, 238, 181, 30);
   static const burgerPlusBtnColor = Color.fromARGB(255, 238, 181, 30);
   static const List<Color> singleItemBackGroundColor = [

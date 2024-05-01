@@ -20,13 +20,13 @@ class HomeScreen extends StatelessWidget {
           backgroundColor: ColorStyles.homePageBackGroundColor,
           appBar: MyAppBar(
             
-            rightIcon: Image.asset(
-              'assets/images/menu.png', 
-              ),
-              leftIcon: Icon(CupertinoIcons.search_circle,
+            rightIcon: Icon(CupertinoIcons.search_circle,
               color: Colors.grey,
               size:45 ,
               ),
+              leftIcon: Image.asset(
+              'assets/images/menu.png', 
+              ), appBarShadowColor: Color.fromARGB(0, 0, 0, 0),
               ),
 
           
@@ -41,22 +41,26 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(
                     height: size.height*.714,
                     width: size.width *.96,
-                    child: GridView.builder(
+                    child: GestureDetector(
                       
-                      itemCount: 20,
-                      
-                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 2,
-                            crossAxisSpacing: 7,
-                            mainAxisSpacing: 4,
-                            mainAxisExtent: 280
-                            
-                            ),
-                        itemBuilder: (context, index) {
-                          return SingleBurger(burgurImage: 'assets/images/shift.png',
-                           burgurName: AppText.burgerName,
-                            burgurPrice: '170',);
-                        },),
+                      child: GridView.builder(
+                        
+                        itemCount: 20,
+                        
+                          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 7,
+                              mainAxisSpacing: 4,
+                              mainAxisExtent: 280,
+                              
+                              
+                              ),
+                          itemBuilder: (context, index) {
+                            return SingleBurger(burgurImage: 'assets/images/shift.png',
+                             burgurName: AppText.burgerName,
+                              burgurPrice: '170',);
+                          },),
+                    ),
                   )
                 ],
               ),

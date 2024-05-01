@@ -1,5 +1,7 @@
 import 'package:dokme_burger/components/colors-style.dart';
 import 'package:dokme_burger/components/text-style.dart';
+import 'package:dokme_burger/route/names.dart';
+import 'package:dokme_burger/screens/product_single_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -56,8 +58,11 @@ class _SingleBurgerState extends State<SingleBurger> {
             
             height: 140,
             
-            child: Image.asset(widget.burgurImage,
-            fit: BoxFit.cover,)),
+            child: GestureDetector(
+              onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ProductSingleScreen(),)),
+              child: Image.asset(widget.burgurImage,
+              fit: BoxFit.cover,),
+            )),
       
       
           Text(widget.burgurName,

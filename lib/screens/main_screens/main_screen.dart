@@ -56,6 +56,7 @@ class _MainScreenState extends State<MainScreen> {
                 child: IndexedStack(
                   index: selectedIndex,
                   children: [
+                    
                     Navigator(
                       key: _homeKey,
                       onGenerateRoute: (settings) => MaterialPageRoute(
