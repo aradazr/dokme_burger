@@ -22,6 +22,7 @@ class ColorStyles {
   static const navBarHomeActiveColor = Color.fromARGB(255, 238, 181, 30);
   static const burgerPlusBtnColor = Color.fromARGB(255, 238, 181, 30);
   static const ruleColor = Color.fromARGB(255, 217, 217, 217);
+  static const burgerInBasKet = Color.fromARGB(127, 0, 0, 0);
   static const List<Color> singleItemBackGroundColor = [
     Color.fromARGB(15, 0, 0, 0),
     Color.fromARGB(255, 26, 20, 55),

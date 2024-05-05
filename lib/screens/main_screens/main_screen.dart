@@ -67,7 +67,7 @@ class _MainScreenState extends State<MainScreen> {
                     Navigator(
                       key: _profileKey,
                       onGenerateRoute: (settings) => MaterialPageRoute(
-                        builder: (context) => ProfileScreen(),
+                        builder: (context) => ProfileScreen(userName: 'نام کاربری', userNumber: '09332529366',),
                       ),
                     ),
                     

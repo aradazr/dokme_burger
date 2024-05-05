@@ -1,5 +1,7 @@
 
 
+import 'package:dokme_burger/screens/auth/send_sms_screen.dart';
+import 'package:dokme_burger/screens/auth/verify_code_screen.dart';
 import 'package:dokme_burger/screens/product_list_screen.dart';
 import 'package:dokme_burger/screens/product_single_screen.dart';
 
@@ -9,8 +11,8 @@ class ScreenNames{
 
   static const root = '/';
 
-  static const loginPage = '/loginPage';
-  static const registerationCodePage = '/registerationCodePage';
+  static const sendSmsScreen = '/sendSmsScreen';
+  static const verifyCodeScreen = '/verifyCodeScreen';
   static const signUpPage = '/signUpPage';
   static const mainScreen = '/mainScreen';
   static const productListScreen = '/productListScreen';

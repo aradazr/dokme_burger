@@ -2,6 +2,7 @@ import 'package:dokme_burger/components/colors-style.dart';
 import 'package:dokme_burger/components/strings.dart';
 import 'package:dokme_burger/components/text-style.dart';
 import 'package:dokme_burger/widgets/app_bar.dart';
+import 'package:dokme_burger/widgets/yellow_btn_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -139,31 +140,22 @@ class ProductSingleScreen extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: Colors.white
                   ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                            
-                      //! قیمت برگر
-                      Text('270,000 تومان',
-                      textDirection: TextDirection.rtl,
-                      style: AppTextStyle.burgurSingleScreenPrice,
-                      ),
-                       //!دکمه افزودن به سبد خرید
-                      Container(
-                        alignment: Alignment.center,
-                        height: size.height *.06,
-                        width: size.width *.36,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(11),
-                          color: ColorStyles.addToBasketColor,
-                          
+                  child: Padding(
+                    padding: EdgeInsets.fromLTRB(23, 0, 23, 0),
+                    child: Row(
+                      
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                              
+                        //! قیمت برگر
+                        Text('270,000 تومان',
+                        textDirection: TextDirection.rtl,
+                        style: AppTextStyle.burgurSingleScreenPrice,
                         ),
-                        child: Text(
-                          AppText.addToBasket,
-                          style: AppTextStyle.addToBasket,
-                        ),
-                      )
-                    ],
+                         //!دکمه افزودن به سبد خرید
+                        YellowBtnWidget(textInsideTheYellowContainer: 'افزودن به سبد',)
+                      ],
+                    ),
                   ),
                 )
               ],
@@ -174,6 +166,8 @@ class ProductSingleScreen extends StatelessWidget {
     );
   }
 }
+
+
 class CartBadge extends StatelessWidget {
    CartBadge({super.key});
 int count = 0;

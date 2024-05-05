@@ -88,7 +88,17 @@ class AppTextStyle {
   );
   static const TextStyle userProfile = TextStyle(
     fontFamily: 'dana',
-    fontSize: 20,
+    fontSize: 24,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle burgerNameInsideBlackContainer = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 24,
+    color: Color.fromARGB(255, 255, 255, 255),
+  );
+  static const TextStyle basketText = TextStyle(
+    fontFamily: 'dana',
+    fontSize: 24,
     color: Color.fromARGB(255, 255, 255, 255),
   );
   static const TextStyle userName = TextStyle(

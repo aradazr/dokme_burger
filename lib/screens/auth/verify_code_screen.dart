@@ -7,14 +7,14 @@ import 'package:dokme_burger/widgets/input_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
-class RegisterationCodePage extends StatelessWidget {
-  RegisterationCodePage({super.key});
+class VerifyCodeScreen extends StatelessWidget {
+  VerifyCodeScreen({super.key});
 
   final TextEditingController _controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-
+    final mobileRouteArg = ModalRoute.of(context)!.settings.arguments as String;
     return SafeArea(
       child: GestureDetector(
         onTap: () => FocusScope.of(context).unfocus(),
@@ -36,7 +36,8 @@ class RegisterationCodePage extends StatelessWidget {
                   
                   //! کد فعال سازی برای فلان شماره ارسال شد
                   Text(
-                    AppText.registerCodePageSendCodeToNumber,
+                    AppText.registerCodePageSendCodeToNumber
+                    .replaceAll(AppText.replace, mobileRouteArg),
                     style: AppTextStyle.registerCodePageSendCodeToNumber,
                   ),
                   SizedBox(

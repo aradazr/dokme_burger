@@ -1,8 +1,9 @@
 class AppText{
+  static const String replace = "replace";
   static const String loginPageinterYourNumber = 'شماره موبایل خود را وارد کنید';
   static const String loginPageHintText = '09332529366';
   static const String loginPageSendCode = 'ارسال کد';
-  static const String registerCodePageSendCodeToNumber = 'کد فعال سازی برای ۰۹۳۳۲۵۲۹۳۶۶ ارسال شد';
+  static const String registerCodePageSendCodeToNumber = 'کد فعال سازی برای $replace ارسال شد';
   static const String registerCodePageWrongNumber = 'شماره اشتباه است؟ ویرایش شماره';
   static const String registerCodePageEnterRegisterationCode = 'کد فعال سازی را وارد کنید';
   static const String registerCodePageContinue = 'ادامه';
@@ -15,5 +16,6 @@ class AppText{
   static const String exPlain = ':توضیحات';
   static const String addToBasket = 'افزودن به سبد';
   static const String userProfile = 'پروفایل کاربر';
+  static const String basketText = 'سبد خرید';
   
 }

@@ -5,7 +5,11 @@ import 'package:dokme_burger/widgets/app_bar.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
-  const ProfileScreen({super.key});
+    ProfileScreen({super.key, required this.userName, required this.userNumber});
+
+
+  final String userName;
+  final String userNumber;
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +50,7 @@ class ProfileScreen extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text('آراد آذرپناه',
+                        Text(userName,
                         style: AppTextStyle.userName,
                         ),
                         Image.asset('assets/images/profile.png'),
@@ -61,7 +65,7 @@ class ProfileScreen extends StatelessWidget {
                         
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          Text('09332529366',
+                          Text(userNumber,
                           style: AppTextStyle.userPhoneNumber,
                           ),
                           SizedBox(width:size.width *.02),
