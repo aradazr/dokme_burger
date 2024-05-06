@@ -5,6 +5,7 @@ import 'package:dokme_burger/screens/auth/cubit/auth_cubit.dart';
 import 'package:dokme_burger/widgets/input_text_field.dart';
 import 'package:dokme_burger/widgets/custom_bttn.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SendSmsScreen extends StatelessWidget {
@@ -48,9 +49,11 @@ class SendSmsScreen extends StatelessWidget {
                         Navigator.pushNamed(
                             context, ScreenNames.verifyCodeScreen,
                             arguments: state.mobile);
-                      } else if (state is ErrorState) {
+                      } else if(state is ErrorState) {
+                        debugPrint(state.toString());
                         ScaffoldMessenger.of(context).showSnackBar(
-                          const SnackBar(
+                          
+                           const SnackBar(
                             backgroundColor: Colors.red,
                             duration: Duration(seconds: 1),
                             content: Text('خطایی رخ داد'),
@@ -60,13 +63,15 @@ class SendSmsScreen extends StatelessWidget {
                     },
                     builder: (context, state) {
                       if (state is LoadingState) {
-                        Center(
+                       return const Center(
                           child: CircularProgressIndicator(
                             color: Colors.purple,
+                            
                           ),
                         );
                       }
-                      return CustomBttn(
+                      else {
+                        return CustomBttn(
                         bttnColor: ColorStyles.loginPageSendCodeColor,
                         bttnText: AppText.loginPageSendCode,
                         onTap: () {
@@ -74,6 +79,7 @@ class SendSmsScreen extends StatelessWidget {
                               .sendSms(_controller.text);
                         },
                       );
+                      }
                     },
                   )
                 ],
